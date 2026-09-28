@@ -1,0 +1,206 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f6fa;
+
+    margin: 0;
+
+    padding: 30px;
+}
+
+
+/* Login */
+
+.login-box {
+
+    width: 400px;
+
+    margin: 100px auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+
+    width: 800px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+/* Headings */
+
+h1 {
+
+    color: #1769aa;
+
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+
+/* Sections */
+
+.section {
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+}
+
+
+/* Input */
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+}
+
+
+/* Button */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    background: #1769aa;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #0d4f82;
+}
+
+
+/* Logout */
+
+.logout {
+
+    background: #d9534f;
+}
+
+
+.logout:hover {
+
+    background: #c9302c;
+}
+
+
+/* Table */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    text-align: center;
+}
+
+
+th {
+
+    background: #1769aa;
+
+    color: white;
+}
+
+
+/* Forgot links */
+
+.forgot-links {
+
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+.forgot-links a {
+
+    color: #1769aa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.forgot-links a:hover {
+
+    text-decoration: underline;
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+}

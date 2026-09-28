@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Credit Card Processing System</h1>
+        <h2>Card Details</h2>
+
+        <div class="section">
+
+            <h3>● Card Information</h3>
+
+            <p>
+                <b>Card Holder:</b>
+                <span id="cardHolder"></span>
+            </p>
+
+            <p>
+                <b>Card Type:</b>
+                <span id="cardType"></span>
+            </p>
+
+            <p>
+                <b>Expiry Date:</b>
+                <span id="expiryDate"></span>
+            </p>
+
+            <p>
+                <b>Card Status:</b>
+                <span id="cardStatus"></span>
+            </p>
+
+        </div>
+
+        <button onclick="goToDashboard()">
+            Back to Dashboard
+        </button>
+
+    </div>
+
+    <script>
+
+        let username = localStorage.getItem("username");
+
+        if (!username) {
+            window.location.href = "index.html";
+        }
+
+        document.getElementById("cardHolder").textContent = username;
+
+        // Card type
+        let cardTypes = ["Visa", "Mastercard"];
+
+        let randomType =
+            cardTypes[Math.floor(Math.random() * cardTypes.length)];
+
+        // Expiry date
+        let currentYear = new Date().getFullYear();
+
+        let expiryYear =
+            currentYear + Math.floor(Math.random() * 4) + 1;
+
+        let expiryDate =
+            "12/" + String(expiryYear).slice(-2);
+
+        // Card status
+        let statuses = ["Active", "Deactive"];
+
+        let randomStatus =
+            statuses[Math.floor(Math.random() * statuses.length)];
+
+        // Display details
+        document.getElementById("cardType").textContent = randomType;
+
+        document.getElementById("expiryDate").textContent = expiryDate;
+
+        document.getElementById("cardStatus").textContent = randomStatus;
+
+        // Back to Dashboard
+        function goToDashboard() {
+            window.location.href = "dashboard.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
